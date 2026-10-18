@@ -1,0 +1,17 @@
+# One-click deploy on Render (Blueprint). The disk keeps your database between deploys.
+services:
+  - type: web
+    name: taskflow
+    runtime: docker
+    plan: starter          # a paid plan is needed for a persistent disk + always-on e-mail reminders
+    healthCheckPath: /_stcore/health
+    disk:
+      name: taskflow-data
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - {key: TASKFLOW_DATA_DIR, value: /data}
+      - {key: SMTP_HOST, sync: false}
+      - {key: SMTP_PORT, value: "587"}
+      - {key: SMTP_USER, sync: false}
+      - {key: SMTP_PASSWORD, sync: false}

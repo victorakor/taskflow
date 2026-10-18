@@ -1,0 +1,14 @@
+[server]
+headless = true
+enableStaticServing = true          # serves ./static (PWA manifest + icons) at /app/static
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+primaryColor = "#6366f1"
+font = "sans serif"

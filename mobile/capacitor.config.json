@@ -1,0 +1,10 @@
+{
+  "appId": "com.example.taskflow",
+  "appName": "TaskFlow",
+  "webDir": "www",
+  "server": {
+    "url": "https://YOUR-APP-URL",
+    "cleartext": false,
+    "androidScheme": "https"
+  }
+}

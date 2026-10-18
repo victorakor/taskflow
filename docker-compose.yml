@@ -1,0 +1,9 @@
+services:
+  taskflow:
+    build: .
+    ports: ["8501:8501"]
+    env_file: [.env]          # SMTP_* settings, see .env.example
+    volumes: ["taskflow-data:/data"]
+    restart: unless-stopped
+volumes:
+  taskflow-data:

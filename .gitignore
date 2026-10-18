@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+
+# App data & secrets — never commit
+data/
+*.db
+*.db-wal
+*.db-shm
+.env
+.streamlit/secrets.toml
+
+# Mobile wrapper build output
+mobile/node_modules/
+mobile/android/
+mobile/ios/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
