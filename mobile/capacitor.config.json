@@ -1,9 +1,9 @@
 {
-  "appId": "com.example.taskflow",
+  "appId": "com.victorakor.taskflow",
   "appName": "TaskFlow",
   "webDir": "www",
   "server": {
-    "url": "https://YOUR-APP-URL",
+    "url": "https://taskflow-jkur.onrender.com",
     "cleartext": false,
     "androidScheme": "https"
   }
