@@ -4,7 +4,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-RUN useradd -m app && mkdir -p /data && chown -R app /app /data
+RUN mkdir -p /data
 USER app
 VOLUME /data
 EXPOSE 8501
