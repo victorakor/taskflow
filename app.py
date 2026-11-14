@@ -68,6 +68,7 @@ def header(user, tz):
 
 
 boot()
+// style injection 
 style.inject()
 browser.pwa()
 user = current_user()
